@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etiq – Support</title>
+<style>
+  :root {
+    --bg: #f2f2f7;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --muted: #5c5c63;
+    --accent: #1a7a43;
+    --on-accent: #ffffff;
+    --border: #e1e1e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a8;
+      --accent: #4dd185;
+      --on-accent: #000000;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+  nav a {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  article {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 28px 24px;
+    margin-bottom: 32px;
+    border: 1px solid var(--border);
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 32px 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 20px; }
+  a { color: var(--accent); }
+  .contact {
+    display: inline-block;
+    margin: 4px 0 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  details {
+    border-top: 1px solid var(--border);
+    padding: 14px 0;
+  }
+  details:last-of-type { border-bottom: 1px solid var(--border); }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style-position: outside;
+  }
+  details p, details ul { margin: 10px 0 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  .note { color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Langue et liens / Language and links">
+  <a href="#fr" lang="fr">Français</a>
+  <a href="#en" lang="en">English</a>
+  <a href="../">Confidentialité / Privacy</a>
+</nav>
+
+<article id="fr" lang="fr">
+  <h1>Support Etiq</h1>
+  <p class="lead">Une question, un problème, une suggestion ? Les réponses aux questions fréquentes sont ci-dessous. Sinon, écris-nous.</p>
+  <a class="contact" href="mailto:fida.mili@gmail.com?subject=Support%20Etiq">Écrire au support</a>
+  <p class="note">fida.mili@gmail.com. Indique si possible le modèle de ton iPhone, ta version d'iOS et le code-barres concerné.</p>
+
+  <h2>Questions fréquentes</h2>
+
+  <details>
+    <summary>Le scanner ne s'affiche pas ou ne lit pas le code-barres</summary>
+    <ul>
+      <li>Vérifie que l'accès à la caméra est autorisé : Réglages &gt; Etiq &gt; Caméra.</li>
+      <li>Si le scan n'est pas disponible sur ton appareil, Etiq affiche un écran de saisie manuelle.</li>
+      <li>Cadre bien le code-barres, avec assez de lumière. Le bouton lampe en haut de l'écran peut aider.</li>
+      <li>Tu peux toujours saisir le code à la main avec le bouton clavier : ce sont les chiffres imprimés sous le code-barres.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>« Produit introuvable » : que faire ?</summary>
+    <p>Les fiches viennent d'Open Food Facts, une base collaborative. Si un produit n'y est pas encore, le bouton « Ajouter ce produit sur Open Food Facts » ouvre le site pour le créer. Une fois ajouté, il sera visible dans Etiq pour tout le monde.</p>
+  </details>
+
+  <details>
+    <summary>Une information est fausse ou incomplète</summary>
+    <p>Etiq affiche les données d'Open Food Facts telles quelles. Tu peux les corriger directement sur le site, depuis le lien « Voir la fiche sur Open Food Facts » en bas de chaque fiche. Etiq rafraîchit les produits en cache tous les 7 jours.</p>
+    <p>Si l'erreur concerne la note, un additif ou un verdict de régime calculé par Etiq, écris-nous avec le code-barres.</p>
+  </details>
+
+  <details>
+    <summary>Comment est calculée la note sur 100 ?</summary>
+    <p>Elle additionne quatre critères : Nutri-Score (50 points), additifs (25), transformation NOVA (15) et label bio (10). Un produit contenant un additif à risque élevé ne peut pas dépasser 49. Sans Nutri-Score, aucune note n'est calculée. Touche la note dans l'app pour voir le détail, ou consulte Réglages &gt; Méthodologie de la note.</p>
+  </details>
+
+  <details>
+    <summary>Pourquoi un additif est-il « Non évalué » ?</summary>
+    <p>Etiq n'attribue un niveau de risque qu'à partir de sources officielles (EFSA, ANSES, CIRC). Un additif absent de la base, ou pour lequel aucune source n'a encore été retenue, est affiché « Non évalué » et ne pénalise pas la note.</p>
+  </details>
+
+  <details>
+    <summary>Comment fonctionnent les verdicts de régimes et d'allergies ?</summary>
+    <p>Active tes régimes et allergies dans Réglages. Etiq analyse alors les ingrédients, les allergènes déclarés et les labels, et affiche une bannière verte (compatible), orange (à vérifier) ou rouge (non compatible), avec la raison. Sans liste d'ingrédients, le verdict est « Données insuffisantes ».</p>
+    <p>Pour le halal, trois niveaux d'exigence (souple, standard, strict) déterminent ce qui est jugé douteux. Pour le halal comme pour le casher, seule une certification garantit le caractère du produit.</p>
+    <p><strong>En cas d'allergie, vérifie toujours l'étiquette du produit.</strong></p>
+  </details>
+
+  <details>
+    <summary>Etiq fonctionne-t-il hors ligne ?</summary>
+    <p>Les produits déjà scannés restent consultables hors ligne. Un nouveau produit nécessite une connexion pour être chargé depuis Open Food Facts.</p>
+  </details>
+
+  <details>
+    <summary>Comment effacer mon historique ou mes données ?</summary>
+    <p>Réglages &gt; Réinitialiser l'historique efface l'historique, les favoris et le cache. Supprimer l'application efface toutes ses données. Etiq n'a pas de compte : il n'y a rien à supprimer côté serveur.</p>
+  </details>
+
+  <details>
+    <summary>Quelles données sont collectées ?</summary>
+    <p>Aucune. Ton profil et ton historique restent sur ton iPhone, et seul le code-barres scanné est envoyé à Open Food Facts. Détails dans la <a href="../">politique de confidentialité</a>.</p>
+  </details>
+
+  <h2>Avertissement</h2>
+  <p class="note">Les informations proviennent d'une base collaborative et peuvent être incomplètes ou obsolètes. En cas d'allergie, vérifie toujours l'étiquette du produit. Etiq ne remplace pas l'avis d'un professionnel de santé.</p>
+</article>
+
+<article id="en" lang="en">
+  <h1>Etiq Support</h1>
+  <p class="lead">A question, a problem, a suggestion? Answers to common questions are below. Otherwise, get in touch.</p>
+  <a class="contact" href="mailto:fida.mili@gmail.com?subject=Etiq%20support">Contact support</a>
+  <p class="note">fida.mili@gmail.com. If you can, include your iPhone model, iOS version and the barcode concerned.</p>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>The scanner doesn't appear or doesn't read the barcode</summary>
+    <ul>
+      <li>Make sure camera access is allowed: Settings &gt; Etiq &gt; Camera.</li>
+      <li>If scanning isn't available on your device, Etiq shows a manual entry screen.</li>
+      <li>Frame the barcode well, with enough light. The flashlight button at the top of the screen can help.</li>
+      <li>You can always type the code with the keyboard button: it's the digits printed under the barcode.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>"Product not found": what can I do?</summary>
+    <p>Product data comes from Open Food Facts, a collaborative database. If a product isn't there yet, the "Add this product to Open Food Facts" button opens the website so you can create it. Once added, it will show up in Etiq for everyone.</p>
+  </details>
+
+  <details>
+    <summary>Some information is wrong or incomplete</summary>
+    <p>Etiq shows Open Food Facts data as is. You can correct it directly on the website, using the "View on Open Food Facts" link at the bottom of every product page. Etiq refreshes cached products every 7 days.</p>
+    <p>If the problem is with the score, an additive or a diet verdict computed by Etiq, email us with the barcode.</p>
+  </details>
+
+  <details>
+    <summary>How is the score out of 100 calculated?</summary>
+    <p>It adds up four criteria: Nutri-Score (50 points), additives (25), NOVA processing level (15) and organic label (10). A product containing a high-risk additive cannot score above 49. Without a Nutri-Score, no score is computed. Tap the score in the app to see the breakdown, or go to Settings &gt; How the score works.</p>
+  </details>
+
+  <details>
+    <summary>Why is an additive "Not evaluated"?</summary>
+    <p>Etiq only assigns a risk level based on official sources (EFSA, ANSES, IARC). An additive that is not in the database, or for which no source has been selected yet, is shown as "Not evaluated" and does not lower the score.</p>
+  </details>
+
+  <details>
+    <summary>How do diet and allergy verdicts work?</summary>
+    <p>Turn on your diets and allergies in Settings. Etiq then checks ingredients, declared allergens and labels, and shows a green (compatible), orange (check before eating) or red (not compatible) banner, with the reason. Without an ingredient list, the verdict is "Not enough data".</p>
+    <p>For halal, three strictness levels (lenient, standard, strict) determine what is considered doubtful. For both halal and kosher, only a certification guarantees the product's status.</p>
+    <p><strong>If you have an allergy, always check the product label.</strong></p>
+  </details>
+
+  <details>
+    <summary>Does Etiq work offline?</summary>
+    <p>Products you've already scanned remain available offline. A new product needs a connection to be loaded from Open Food Facts.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my history or data?</summary>
+    <p>Settings &gt; Reset history deletes your history, favourites and cache. Deleting the app removes all of its data. Etiq has no account, so there is nothing to delete on a server.</p>
+  </details>
+
+  <details>
+    <summary>What data is collected?</summary>
+    <p>None. Your profile and history stay on your iPhone, and only the scanned barcode is sent to Open Food Facts. Details in the <a href="../#en">privacy policy</a>.</p>
+  </details>
+
+  <h2>Disclaimer</h2>
+  <p class="note">Information comes from a collaborative database and may be incomplete or out of date. If you have an allergy, always check the product label. Etiq does not replace advice from a health professional.</p>
+</article>
+</main>
+</body>
+</html>
